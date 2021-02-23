@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import promiseMachine from './machine/example';
 
 function App() {
+  useEffect(() => {
+    console.log(promiseMachine);
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
